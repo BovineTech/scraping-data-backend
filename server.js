@@ -19,5 +19,5 @@ mongoose
     console.log("----------Error connecting to MongoDB-----\n", err)
   );
 
-app.use('/api/Steam_Game_API', gameRoutes);
+app.use("/api/games", gameRoutes);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
